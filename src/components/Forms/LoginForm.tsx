@@ -48,7 +48,7 @@ const LoginForm = () => {
 							id={field.name}
 							aria-invalid={fieldState.invalid}
 							placeholder="Enter your email"
-							// autoComplete="off"
+							autoComplete="email"
 						/>
 						{fieldState.invalid && <FieldError errors={[fieldState.error]} />}
 					</Field>
@@ -68,7 +68,7 @@ const LoginForm = () => {
 							aria-invalid={fieldState.invalid}
 							type="password"
 							placeholder="Enter your password"
-							// autoComplete="off"
+							autoComplete="current-password"
 						/>
 						{fieldState.invalid && <FieldError errors={[fieldState.error]} />}
 					</Field>
