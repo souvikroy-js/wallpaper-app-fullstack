@@ -10,6 +10,7 @@ const ThemeProvider = ({ children, ...props }: ThemeProviderProps) => {
 	return (
 		<NextThemesProvider {...props}>
 			{children}
+
 			<ToastProvider />
 		</NextThemesProvider>
 	);
